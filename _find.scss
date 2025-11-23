@@ -1,0 +1,21 @@
+.find-section {
+&__container {
+        display: flex;
+        gap: 48px;
+        padding-bottom: 90px;
+        justify-content: center;
+    }
+
+    &__map {
+        border-radius: 32px;
+        height: 481px;
+        width: 605px;
+       }
+
+    &__title {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+
+
