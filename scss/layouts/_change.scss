@@ -1,0 +1,63 @@
+.change {
+    &__container {
+            display: flex;
+            gap: 60px;
+            padding-bottom: 40px;
+        }
+    
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+}
+
+.change-images {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+        &__image-first,
+        &__image-second {
+            border-radius: 50%;
+            width: 335px;
+            height: 328px;
+        }
+    
+        &__image-second {
+            margin-left: 172px;
+        }
+
+        &__icon-first {
+            fill: var(--secondary-color-blue);
+            position: absolute;
+            left: 90px;
+            top: 350px;
+            opacity: 0;
+            transform: scale(0.5) rotate(0deg);
+        }
+    
+        &__icon-second {
+            fill: var(--main-color);
+            position: absolute;
+            left: 400px;
+            top: 30px;
+            opacity: 0;
+            transform: scale(0.5) rotate(0deg);
+        }
+    
+        &__icon-third {
+            fill: var(--secondary-color-light-brown);
+            position: absolute;
+            left: 400px;
+            top: 280px;
+            opacity: 1;
+            transform: scale(0.5) rotate(0deg);
+        }
+    
+        &__icon-first,
+        &__icon-second,
+        &__icon-third {
+            animation: spin 1.5s ease-out forwards, spin 4s linear 2s;
+        }
+}
