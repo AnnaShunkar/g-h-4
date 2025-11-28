@@ -1,0 +1,123 @@
+
+body {
+    color: var(--primary-color-dark);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-image: url('../images/benefits-background.png');
+    background-position: center 1550px;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes spin {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(180deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+h1 {
+    color: var(--main-color);
+    font-family: 'Play', serif;
+    font-weight: 700;
+    font-size: 140px;
+    width: 529px;
+    line-height: 81%;
+    margin-bottom: 40px;
+    @media screen and (max-width: $bp-tablet){
+        font-size: 54px;
+        text-align: center;
+    }
+}
+
+h2 {
+    font-family: 'Play', serif;
+    font-weight: 700;
+    font-size: 64px;
+        @media screen and (max-width: $bp-tablet) {
+                font-family: 'Roboto';
+                font-style: Medium;
+                font-size: 32px;
+                font-weight: 500;
+            }
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+span {
+    color: var(--main-color);
+}
+
+.span {
+    color: var(--primary-color-dark);
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+}
+.container {
+    max-width: 320px;
+    padding: 0 20px;
+    @media screen and (min-width: $bp-tablet){
+        width: 100%;
+        max-width: 1288px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+}
+address {
+    font-style: normal;
+}
+.first-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.second-paragraph {
+    color: var(--secondary-color-brown);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.hero-paragraph { 
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 1.7;
+}
+footer {
+    background-color: var(--secondary-color-blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    height: 278px;
+    position: relative;
+}
