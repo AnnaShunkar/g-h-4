@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background-image: url('../images/benefits-background.png');
-    background-position: center 1400px;
+    background-position: center 1350px;
     background-repeat: no-repeat;
     background-size: 100%
 }
@@ -52,6 +52,12 @@ h2 {
     font-family: 'Play', serif;
     font-weight: 700;
     font-size: 64px;
+        @media screen and (max-width: $bp-tablet) {
+                font-family: 'Roboto';
+                font-style: Medium;
+                font-size: 32px;
+                font-weight: 500;
+            }
 }
 
 .visually-hidden {

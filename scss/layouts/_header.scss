@@ -59,14 +59,17 @@
             }
         }
         &__burger {
-            display: flex;
-                background-color: transparent;
+            display: none;
+                @media screen and (max-width: $bp-tablet){
+                display: flex;
+                    background-color: transparent;
                     border: none;
                     width: 20px;
                     height: 14px;
+                    top: 35px;
+                    left: 420px;
                     fill: var(--primary-color-light);
-                @media screen and (min-width: $bp-tablet){
-                display: none;
+                    position: absolute;
                 }
         }
 }
