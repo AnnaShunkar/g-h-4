@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap" <link
+        rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,9 +55,9 @@
                     <use href="./images/logos.svg#icon-burger-menu"> </use>
                 </svg>
             </button>
-            <div class="mobile-menu">
-                <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
-            </div>
+        </div>
+        <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
         </div>
     </header>
     <main>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
         <section id="benefits-section" class="benefits-section">
             <div class="container">
                 <div class="benefits-section__container">
@@ -157,33 +157,49 @@
         <section id="procedures-section">
             <div class="container">
                 <h2 class="procedures__title">Наші <span>процедури</span></h2>
-                <div class="procedures__container">
-                    <button class="carousel-button" type="button">
-                        <svg class="arrow-button__reverse" width="16" height="16">
-                            <use href="./images/logos.svg#icon-arrow"></use>
-                        </svg>
-                    </button>
-                    <div class="procedures__list">
-                        <div class="procedures__cards">
-                            <img class="procedures__card" src="./images/mask.jpg" alt="маска">
-                            <p class="procedures__text">Маски для обличчя</p>
+                <div class="procedures__slider">
+                    <div class="procedures__container swiper-container">
+                        <button class="carousel-button" type="button">
+                            <svg class="arrow-button__reverse" width="16" height="16">
+                                <use href="./images/logos.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <div class="procedures-card__list swiper-wrapper">
+                            <ul class="procedures__swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <article class="procedures-card__cards">
+                                        <img class="procedures-card__card" src="./images/mask.jpg" alt="маска">
+                                        <p class="procedures-card__text">Маски для обличчя</p>
+                                    </article>
+                                </li>
+                                <li class="swiper-slide">
+                                    <article class="procedures-card__cards">
+                                        <img class="procedures-card__card" src="./images/injections.jpg" alt="ін'єкція">
+                                        <p class="procedures-card__text">Ін'єкції для обличчя</p>
+                                    </article>
+                                </li>
+                                <li class="swiper-slide">
+                                    <article class="procedures-card__cards">
+                                        <img class="procedures-card__card" src="./images/pilling.jpg" alt="пілінг">
+                                        <p class="procedures-card__text">Пілінг для обличчя</p>
+                                    </article>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="procedures__cards">
-                            <img class="procedures__card" src="./images/injections.jpg" alt="ін'єкція">
-                            <p class="procedures__text">Ін'єкції для обличчя</p>
-                        </div>
-                        <div class="procedures__cards">
-                            <img class="procedures__card" src="./images/pilling.jpg" alt="пілінг">
-                            <p class="procedures__text">Пілінг для обличчя</p>
-                        </div>
+                        <button class="carousel-button" type="button">
+                            <svg class="arrow-button" width="16" height="16">
+                                <use href="./images/logos.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
                     </div>
-                    <button class="carousel-button" type="button">
-                        <svg class="arrow-button" width="16" height="16">
-                            <use href="./images/logos.svg#icon-arrow"></use>
-                        </svg>
+                </div>
+                <div class="pagination">
+                    <span class="pagination__button"></span>
+                    <span class="pagination__button"></span>
+                    <span class="pagination__button"></span>
                 </div>
             </div>
-        </section>
+        </section> 
         <section id="find-section">
             <div class="container">
                 <h2 class="find-section__title">Як нас <span>знайти</span></h2>
@@ -279,41 +295,43 @@
                 </address>
             </div>
         </div>
-    </footer>
-    <div class="backdrop is-hidden">
-        <div class="modal">
-            <button class="modal__btn-close modal-btn-close" type="button">Close</button>
-            <h2 class="modal__title">Замовити <br> дзвінок</h2>
-            <p class="modal__text">Запишіться <span>безкоштовно</span> <br>
-                та отримайте подарунок</p>
-            <form name="modal-form" autocomplete="off">
-                <div class="modal__form-field input">
-                    <label class="input__label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
-                    <input class="input__control" type="text" id="user-name" name="user-name"
-                        placeholder="Ваше ім'я та прізвище" minlength="2" maxlength="50" required>
-                </div>
+    </footer> 
+        <div class="backdrop is-hidden">
+            <div class="modal">
+                <button class="modal__btn-close modal-btn-close" type="button">Close</button>
+                <h2 class="modal__title">Замовити <br> дзвінок</h2>
+                <p class="modal__text">Запишіться <span>безкоштовно</span> <br>
+                    та отримайте подарунок</p>
+                <form name="modal-form" autocomplete="off">
+                    <div class="modal__form-field input">
+                        <label class="input__label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                        <input class="input__control" type="text" id="user-name" name="user-name"
+                            placeholder="Ваше ім'я та прізвище" minlength="2" maxlength="50" required>
+                    </div>
 
-                <div class="modal__form-field input">
-                    <label class="input__label visually-hidden" for="user-tel">Ваш номер телефону</label>
-                    <input class="input__control" type="tel" id="user-tel" name="user-tel"
-                        placeholder="Ваш номер телефону" min="0" max="9" required pattern="^\+[0-9]{12}">
-                </div>
+                    <div class="modal__form-field input">
+                        <label class="input__label visually-hidden" for="user-tel">Ваш номер телефону</label>
+                        <input class="input__control" type="tel" id="user-tel" name="user-tel"
+                            placeholder="Ваш номер телефону" min="0" max="9" required pattern="^\+[0-9]{12}">
+                    </div>
 
-                <div class="modal__form-field input">
-                    <label class="input__label visually-hidden" for="user-email">Ваша електронна пошта</label>
-                    <input class="input__control" type="email" id="user-email" name="user-email"
-                        placeholder="Ваша електронна пошта" required>
-                </div>
-                <button class="modal__button button " type="submit">Замовити дзвінок</button>
+                    <div class="modal__form-field input">
+                        <label class="input__label visually-hidden" for="user-email">Ваша електронна пошта</label>
+                        <input class="input__control" type="email" id="user-email" name="user-email"
+                            placeholder="Ваша електронна пошта" required>
+                    </div>
+                    <button class="modal__button button " type="submit">Замовити дзвінок</button>
 
-                <p class="form-terms">Натискаючи на кнопку я погоджуюсь з
-                    <a class="form-terms__link" href="#">політикою конфіденційності</a>
-                </p>
+                    <p class="form-terms">Натискаючи на кнопку я погоджуюсь з
+                        <a class="form-terms__link" href="#">політикою конфіденційності</a>
+                    </p>
+            </div>
+            </form>
         </div>
-        </form>
-    </div> 
         <script src="./js/modal.js"></script>
         <script src="./js/mobile-menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="./js/procedures-slider.js"></script>
 </body>
 
 </html>

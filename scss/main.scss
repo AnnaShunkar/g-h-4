@@ -1,6 +1,7 @@
 @import './utilis/variables';
 @import './base';
 @import './components/buttons';
+@import './components/pagination';
 
 @import './layouts/mobile-menu';
 @import './layouts/header';
@@ -8,6 +9,7 @@
 @import './layouts/change';
 @import './layouts/benefits';
 @import './layouts/procedures';
+@import './components/procedures-card';
 @import './components/carousel-button';
 @import './layouts/find';
 @import './layouts/contacts';
