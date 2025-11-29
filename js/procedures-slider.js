@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper-container', {
   },
 
   navigation: {
-    nextEl: '.carousel-button',
-    prevEl: '.carousel-button__reverse',
+    nextEl: '.carousel-button__reverse',
+    prevEl: '.carousel-button',
   },
 });
