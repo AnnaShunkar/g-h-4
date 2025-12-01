@@ -8,6 +8,7 @@
                     background: rgba(255, 255, 255, 0.25);
         }
     &__container {
+        position: relative;
         padding: 32px 20px;
         display: flex;
         align-items: center;
@@ -31,7 +32,7 @@
 
     &__media {
         display: none;
-        @media screen and (min-width: $bp-tablet) {
+         @media screen and (min-width: $bp-tablet) {
         display: flex;
         gap: 32px;
     }
@@ -60,17 +61,18 @@
         }
         &__burger {
             display: none;
-                @media screen and (max-width: $bp-tablet){
-                    display: flex;
+            @media screen and (max-width: $bp-tablet) {
+                display: flex;
+                position: absolute;
                     background-color: transparent;
                     border: none;
                     width: 20px;
-                    height: 14px;
-                    top: 35px;
-                    left: 420px;
+                    height: 20px;
+                    padding: 0;
                     fill: var(--primary-color-light);
-                    position: absolute;
-                }
+                    top: 32px;
+                    right: 20px;
+            }
         }
 }
 

@@ -12,9 +12,9 @@
         padding: 0;
         background-color: var(--secondary-color-light-brown);
         margin-bottom: 30px;
-    }
 
-    &--active {
-        background-color: var(--main-color);
+        &--active {
+            background-color: var(--main-color);
+        }
     }
 }

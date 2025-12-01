@@ -7,8 +7,9 @@ body {
     background-position: center 1350px;
     background-repeat: no-repeat;
     background-size: 100%;
+    overflow-x: hidden;
     @media screen and (max-width: $bp-tablet) {
-        background-position: center 720px;
+        background-position: center 550px;
         background-size: cover;
         max-width: 768px;
     }
@@ -58,8 +59,8 @@ h2 {
     font-weight: 700;
     font-size: 64px;
         @media screen and (max-width: $bp-tablet) {
-                font-family: 'Roboto';
-                font-style: Medium;
+                text-align: center;
+                font-family: 'Roboto', medium;
                 font-size: 32px;
                 font-weight: 500;
                 line-height: 1;
@@ -87,13 +88,12 @@ ul {
     list-style-type: none;
 }
 .container {
-    max-width: 320px;
-    padding: 0 20px;
     @media screen and (min-width: $bp-tablet){
         width: 100%;
         max-width: 1288px;
-        margin: 0 auto;
+        margin-left: 20px;
         padding: 0 24px;
+
     }
 }
 address {

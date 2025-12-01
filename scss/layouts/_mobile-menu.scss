@@ -12,11 +12,47 @@
     &.is-open {
         transform: translateX(0);
         display: flex;
+        flex-direction: column;
     }
 
     &__btn-close {
         position: absolute;
         top: 16px;
         right: 24px;
+    }
+    &__logo {
+        position: relative;
+        display: flex;
+        padding: 16px 20px;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 20px;
+    }
+    &__link {
+            width: 52px;
+            height: 16px;
+            color: var(--primary-color-dark);
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            transition: color 0.2s;
+            
+                &:hover {
+                    color: var(--main-color);
+                    list-style-type: none;
+                }
+    }
+    &__media{
+        display: flex;
+            flex-direction: row;
+            gap: 16px;
+            padding: 16px 20px;
+    }
+    &__socials{
+        fill: var(--primary-color-dark);
     }
 }

@@ -10,5 +10,9 @@
             color: var(--secondary-color-light-brown);
             text-underline-offset: 2px;
         }
+                        @media screen and (max-width: $bp-tablet) {
+                            padding-bottom: 42px;
+            
+                        }
 }
 

@@ -26,6 +26,11 @@
             }
 
     }
+    &__title {
+        @media screen and (max-width: $bp-tablet) {
+            text-align: left;
+        }
+    }
 
 }
 

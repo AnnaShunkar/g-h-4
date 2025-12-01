@@ -10,9 +10,19 @@
         padding: 49px 56px;
         background-image: url('../images/contacts-background.png');
         background-color: var(--primary-color-dark);
+        @media screen and (max-width: $bp-tablet) {
+            width: 320px;
+            height: 434px;
+            border-radius: 24px;
+            padding: 42px 24px;
+
+        }
     }
         &__form-field {
             margin-bottom: 24px;
+            @media screen and (max-width: $bp-tablet){
+                margin-bottom: 16px;
+            }
         }
         &__control {
             padding: 16px 42px;

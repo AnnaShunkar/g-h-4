@@ -8,6 +8,11 @@
             border: 2px solid var(--secondary-color-light-brown);
             border-radius: 32px;
             background-color: transparent;
+            @media screen and (max-width: $bp-tablet) {
+                width: 241px;
+                    height: 46px;
+                    border-radius: 24px;
+            }
     }
     &__label {
         position: absolute;
