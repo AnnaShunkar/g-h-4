@@ -19,10 +19,7 @@
         }
     }
         &__form-field {
-            margin-bottom: 24px;
-            @media screen and (max-width: $bp-tablet){
-                margin-bottom: 16px;
-            }
+            margin-bottom: 16px;
         }
         &__control {
             padding: 16px 42px;

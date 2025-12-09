@@ -1,7 +1,12 @@
 
 .footer {
-    background-image: url('../images/footer-background.png');
-    background-color: var(--primary-color-dark);
+    background-color: var(--secondary-color-blue);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            height: 278px;
+            position: relative;
+            padding: 56px 0;
     @media screen and (max-width: $bp-tablet) {
             margin-left: 0;
             margin-right: 0;
@@ -12,7 +17,6 @@
     &__container {
             display: flex;
             gap: 40px;
-            padding-top: 56px;
             justify-content: space-between;
             align-items: flex-start;
             @media screen and (max-width: $bp-tablet) {
