@@ -14,7 +14,7 @@
             background-color: var(--main-color);
             border: 1px solid var(--primary-color-light);
         }
-        @media screen and (max-width: $bp-tablet){
+        @media screen and (max-width: $bp-desktop){
             display: none;
         }
 }

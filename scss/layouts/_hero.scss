@@ -1,14 +1,20 @@
 .hero {
     position: relative;
-
     &__section {
         background-image: url('../images/bkg-image-main.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
         padding: 130px 0;
-
-        @media screen and (min-device-pixel-ratio: 2),
+        @media screen and (max-width: $bp-tablet) {
+            background-position: top;
+            background-attachment: scroll;
+            min-height: auto;
+            overflow: hidden;
+            max-width: 100%;
+            padding: 80px 16px; 
+        }
+                @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(56.68deg,
@@ -18,29 +24,19 @@
                     rgba(255, 255, 255, 0) 72.45%),
                 url('../images/bkg-image-main@2x.jpg');
         }
-
-        @media screen and (max-width: $bp-tablet) {
-            background-position: top;
-            background-attachment: scroll;
-            min-height: auto;
-            overflow: hidden;
-            max-width: 100%;
-            padding: 80px 16px; 
-        }
     }
 
     &__container {
         margin: 0 120px;
-
-        @media screen and (max-width: $bp-tablet) {
-            position: relative; 
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            margin: 0 auto;
-            padding: 0 16px; 
+        @media screen and (max-width: $bp-desktop) {
+               position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                margin: 0 auto;
+                padding: 0 16px; 
         }
     }
 
@@ -49,10 +45,9 @@
         font-weight: 400;
         font-size: 18px;
         margin-bottom: 16px;
-
         @media screen and (max-width: $bp-tablet) {
-            text-align: center;
             font-size: 14px; 
+            text-align: center;
         }
     }
 

@@ -4,7 +4,8 @@
         gap: 48px;
         padding-bottom: 90px;
         justify-content: center;
-        @media  screen and (max-width:$bp-tablet) {
+        @media  screen and (max-width: $bp-desktop) {
+            gap: 20px;
             flex-direction: column-reverse;
             padding-bottom: 0;
             justify-content: center;
@@ -17,7 +18,7 @@
             border-radius: 32px;
             height: 481px;
             width: 605px;
-            @media screen and (max-width: $bp-tablet) {
+            @media screen and (max-width: $bp-desktop) {
                 width: 100%;
                 border-radius: 0;
                 padding-left: 0;
